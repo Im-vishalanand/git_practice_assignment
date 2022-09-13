@@ -1,29 +1,53 @@
 
 //prime problem
 
-let isPrime=true;
 
+let count = 0;
 let num=13;
 
-for(let i=0;i<num;i++){
-    isPrime=false;
+for( let i=1; i <= num; i++ ){
+   
+    if  ( num%i === 0 ) {
+
+         count++;
+
+        }
+
+} if (count == 2) {
+
+        console.log ("This is a Prime Number"); 
+
+
+} else {
+
+     console.log ("This is not a Prime Number");
 }
 
-if(isPrime==true){
-    console.log("The number is Prime.")
-}
-else{
-    console.log("The number is not Prime.")
-}
 
 
-//palindrome problem
 
-let str="naman";
-let str1;
+ //palindrome problem
 
-for(let i=0;i<str.length;i++){
-    str==str1
-}
+ let str="nauhhfkefyion";
 
-console.log("Palindrome");
+ let bag = "";
+ 
+ for ( let i = 0; i < str.length; i++ ) {
+     
+             if (str[i] == str[str.length-1-i]) {
+ 
+                 bag = bag + str[i];
+                 
+                   
+               
+             } 
+ 
+ } if (bag == str) {
+ 
+    console.log (str, ":"," is a Palindrome")
+ 
+    
+   
+ } else console.log (str, ":" , "is not a Palindrome");
+ 
+ 
